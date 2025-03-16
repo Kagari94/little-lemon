@@ -1,0 +1,111 @@
+/* Little Lemon Colors */
+:root {
+    --primary-yellow: #F4CE14;
+    --primary-green: #495E57;
+    --secondary-orange: #EE9972;
+    --secondary-peach: #FBDABB;
+    --highlight-white: #EDEFEE;
+    --dark-text: #333333;
+  }
+  
+  /* Reservation Form Container */
+  .reservation-container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--highlight-white);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .reservation-container h1 {
+    color: var(--primary-green);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  /* Form Styling */
+  form {
+    display: grid;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: var(--primary-green);
+    font-size: 1rem;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  /* Input Fields - Using the specific IDs */
+  #res-date,
+  #res-time,
+  #guests,
+  #occasion,
+  form input[type="submit"] {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--secondary-peach);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 250px; /* Fixed width for all inputs */
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  #res-date:focus,
+  #res-time:focus,
+  #guests:focus,
+  #occasion:focus {
+    outline: none;
+    border-color: var(--secondary-orange);
+    box-shadow: 0 0 0 2px rgba(238, 153, 114, 0.2);
+  }
+  
+  /* Submit Button */
+  form input[type="submit"] {
+    background-color: var(--primary-yellow);
+    color: var(--dark-text);
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.2s;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #e5c113;
+    transform: translateY(-2px);
+  }
+  
+  form input[type="submit"]:active {
+    transform: translateY(0);
+  }
+  
+  form input[type="submit"]:disabled {
+    background-color: #cccccc;
+    color: #777777;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #D32F2F;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }

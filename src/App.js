@@ -1,21 +1,14 @@
+import { Routes, Route } from 'react-router-dom'
 import './App.css';
+import HomePage from './pages/home/HomePage';
+import ReservationPage from './pages/reservation/ReservationPage'
 
 function App() {
   return (
-    <>
-      <header className="App-header">
-        
-      </header>
-      <nav>
-
-      </nav>
-      <main>
-
-      </main>
-      <footer>
-        
-      </footer>
-    </>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        <Route path="/reserve-table" element={<ReservationPage/>}/>
+      </Routes>
   );
 }
 

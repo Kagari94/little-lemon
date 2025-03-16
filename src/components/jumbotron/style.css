@@ -1,0 +1,71 @@
+#jumbo-main {
+    background-color: #495E57;
+}
+
+#jumbo-section{
+    display: grid;
+    grid-template-areas:
+        "article div div"
+        "article div div"
+        "button div div"
+    ;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+#jumbo-article{
+    grid-area: article;
+}
+
+#jumbo-article h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: #F4CE14;
+}
+
+#jumbo-article h2 {
+    margin-top: 0;
+    color: white;
+}
+
+#jumbo-article p {
+    color: white;
+}
+#book-a-table{
+    width: 7rem;
+    padding: 0.8rem;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #495E57;
+    background-color: #F4CE14;
+}
+
+#book-a-table:hover{
+    background-color: #c8a912;
+}
+
+#jumbo-img-container {
+    grid-area: div;
+    padding: 1.5rem;
+}
+
+#jumbo-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    #jumbo-section{
+        display: flex;
+        flex-direction: column;
+        max-width: 1080px;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+}
